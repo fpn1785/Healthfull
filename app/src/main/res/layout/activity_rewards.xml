@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".RewardsSystem.Rewards">
+
+
+            <EditText
+                android:id="@+id/edit_textWeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="weight (kg)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edit_textHeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="height (cm)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edit_textAge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="age"
+                android:inputType="number" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="setGoalCalories"
+                android:text="calculate goal calories" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="redeemPoints"
+                android:text="redeem points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="getRecipe"
+                android:text="get recipe" />
+
+            <TextView
+                android:id="@+id/view_recipe_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+</ScrollView>
+
